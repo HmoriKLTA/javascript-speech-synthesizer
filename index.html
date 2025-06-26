@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Meta charset="UTF-8">
+            <title>Speech Synthesizer</title>
+            <link rel="stylesheet" href="styles.css">
+            <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        </head>
+
+    <body>
+        <div class="voicenator"> 
+            <h1>The Voicenator</h1>
+
+            <select name = 'voice' id="voice">
+                <option value = "">Select A Voice</option>
+            </select>
+
+            <label for="rate">Rate:</label>
+            <input type="range" id="rate" min="0" max="3" value="1" step="0.1">
+
+            <label for="pitch">Pitch:</label>
+            <input name="pitch" id="pitch" type="range" min="0" max="2" value="1" step="0.1">
+            
+            <textarea name="text">Hello</textarea>
+            <button id="stop">Stop!</button>
+            <button id="speak">Speak!</button>
+            
+        </div>
+
+        <script src="lib/script.js"></script>
+    </body>
+</html>
