@@ -13,15 +13,21 @@
                 The Voiceinator
             </h1>
 
-            <select name = 'voice' id="voice">
-                <option value = "">Select A Voice</option>
-            </select>
+            <div class="space-y-4">
+                <select name='voice' id="voice" class="w-full block my-2.5 p-2.5 border-0 text-2xl bg-gray-100 outline-none">
+                    <option value="">Select A Voice</option>
+                </select>
 
-            <label for="rate">Rate:</label>
-            <input type="range" id="rate" min="0" max="3" value="1" step="0.1">
+                <div>
+                    <label for="rate" class="block mb-1">Rate:</label>
+                    <input type="range" id="rate" min="0" max="3" value="1" step="0.1" class="w-full range range-primary">
+                </div>
 
-            <label for="pitch">Pitch:</label>
-            <input name="pitch" id="pitch" type="range" min="0" max="2" value="1" step="0.1">
+                <div>
+                    <label for="pitch" class="block mb-1">Pitch:</label>
+                    <input name="pitch" id="pitch" type="range" min="0" max="2" value="1" step="0.1" class="w-full range range-primary">
+                </div>
+            </div>
             
             <textarea class="w-full block my-2.5 p-2.5 border-0 text-2xl bg-gray-100 outline-none h-80" name="text">Hello, I love Javascript</textarea>
             <button class="w-[49%] float-left font-pacifico text-2xl bg-yellow-400 border-0 mb-0 border-b-4 border-yellow-500 cursor-pointer relative active:top-0.5 mx-1 rounded-lg" id="stop">Stop!</button>
